@@ -1,0 +1,38 @@
+#include "windows.h"
+#include "resource.h"
+
+APP_ICON ICON "favicon.ico"
+ICON_IMG BITMAP "kitham.bmp"
+BGIMG BITMAP "1px.bmp"
+
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,1,1
+PRODUCTVERSION 1,1,1
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x4L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904b0"
+		BEGIN
+			VALUE "CompanyName", "KIT-HAM_radio\0"
+			VALUE "FileDescription", "tetris\0"
+			VALUE "FileVersion", "1.1.1\0"
+			VALUE "InternalName", "KIT-HAM_radio\0"
+			VALUE "OriginalFilename", "kit_tetris.exe\0"
+			VALUE "ProductName", "kit_tetris\0"
+			VALUE "ProductVersion", "1.1.1\0"
+			VALUE "LegalCopyright", "© 2025 KIT-HAM_radio. All rights reserved.\0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0409, 1200
+	END
+END
+
+
