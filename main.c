@@ -330,7 +330,7 @@ void timer_action(HWND hwnd, int tid){
 					}
 				}
 
-				if (point.get > pow(point.revel, 1.5)){
+				if (point.get > pow(point.revel, 2)){
 					point.revel += 1;
 					KillTimer(hwnd, SID_ALL);
 					SetTimer(hwnd, SID_ALL, 1000/point.revel, NULL);
@@ -471,9 +471,9 @@ void input_action(HWND hwnd, WPARAM key){
 			if (point.is_end && (IF_DECIDE_KEY(key))){
 				if (point.get < 20){
 					stage.main = SID_END1;
-				} else if (point.get < 50){
+				} else if (point.get < 40){
 					stage.main = SID_END2;
-				} else if (point.get < 100){
+				} else if (point.get < 90){
 					stage.main = SID_END3;
 				} else {
 					stage.main = SID_END4;
